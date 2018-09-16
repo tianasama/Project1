@@ -1,14 +1,417 @@
 <!DOCTYPE html>
+<!--QUESTIONS FOR LEXI:
+**How do I center align the carousel?
+**Can we get a refresher on media queries (specifically hamburger icons)?
+**Can't get arrows on carousel?
+**Two columns won't line up--tried reducing line size and using floats?
+**
+**
+**
+**
+**
+-->
+        
+    
 <html>
+    <html lang="en">
     <head>
-        <title>tiana can code</title>
-    </head>
-    <body>
-        <h1>
-            Tiana Can Code!
-        </h1>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <!-- Bootstrap CSS------------->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    
+    
+    
+    <title>Home - UNC-TV Public Media North Carolina</title>
+    <link rel="shortcut icon" href="images/favicon.png"/>
+    
+    
+</head>
+    
+    
+<body>
+    
+<!--Navigation------------->
+<nav class="navbar navbar-fixed-top" id="mainnav">
+  <div class="row container-fluid"> 
+    <div class="col-6">
+        <div class="navbar-header" id="logo">
+          <a class="navbar-brand" a href="#"><img src="images/unctvlogo.png" alt="UNC TV LOGO" width="140" height="40"</a>
+        </div>
+    </div>
+  
+  <div class="col-6">
+    <ul class="nav navbar-nav" id="mainnavlinks">
+            <li><a href="#">Watch</a></li>
+            <li><a href="#">Explore</a></li>
+            <li><a href="#">Kids</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#" style="color: #9E2026"><b>DONATE</b></a></li>
+            <li><a href="#"><span class="glyphicon glyphicon-search"></span></a></li>
+    </ul>
+  </div>
+</div>    
+  
+</nav>
+    
+<!--Social links------------->
+<div class="container-fluid content inner" id="sociallinks" style="margin-top: 0px;">
+    <ul>
+        <li><a href="#"><img src="images/facebookicon.jpg" alt="Facebook"></a></li>
+        <li><a href="#"><img src="images/twittericon.jpg" alt="Twitter"></a></li>
+        <li><a href="#"><img src="images/instagramicon.jpg" alt="Instagram"></a></li>
+        <li><a href="#"><img src="images/youtubeicon.jpg" alt="Youtube"></a></li>
+        <li><a href="#"><img src="images/emailicon.jpg" alt="Email"></a></li>
+    </ul>
+</div>
+
+    
+   
+   
+<!--Start carousel code------------->
+        <div class="carousel slide content inner" data-ride="carousel" id="myCarousel">
+            <ol class="carousel-indicators">
+                <li data-target="myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="myCarousel" data-slide-to="1"></li>
+                <li data-target="myCarousel" data-slide-to="2"></li>
+                <li data-target="myCarousel" data-slide-to="3"></li>
+                <li data-target="myCarousel" data-slide-to="4"></li>
+            </ol>
+            <div class="carousel-inner content inner" role="listbox">
+                <div class="item active">
+                    <img src="images/animalsuperparents.png" alt= "Read">
+                    <div class="container">
+                        <div class="carousel-caption text-left mycarouselcaption">
+                            <h1><b>Animal Super Parents</b></h1>
+                            <p>Experience Animal Super Parents, Sunday, 9/16, at 9 PM, on the Explorer Channel.</p><br>
+                            <p>Learn More ></p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="item">
+                    <img src="images/flavornc.png" alt= "Hammocks">
+                    <div class="container">
+                        <div class="carousel-caption text-left mycarouselcaption">
+                            <h1><b>Flavor, NC</b></h1>
+                            <p>Tune into Flavor NC, Thursdays, at 8 PM, on The North Carolina Channel.</p><br>
+                            <p>Learn More ></p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="item">
+                    <img src="images/amazingbody.png" alt= "Reel">
+                    <div class="container">
+                        <div class="carousel-caption text-left mycarouselcaption">
+                            <h1><b>The Amazing Human Body</b></h1>
+                            <p>Enjoy a night filled with The Amazing Human Body, Wednesday, 9/19, starting at 8 PM, on UNC-TV.</p><br>
+                            <p>Learn More ></p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="item">
+                    <img src="images/amanpourcarousel.png" alt= "Amanpour">
+                    <div class="container">
+                        <div class="carousel-caption text-left mycarouselcaption">
+                            <h1><b>Amanpour & Company</b></h1>
+                            <p>Christine Amanpour and other experts share smart talk about today's news, weeknights, at 11, on UNC-TV.</p><br>
+                            <p>Learn More ></p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="item">
+                    <img src="images/canoecarousel.jpg" alt= "Canoes">
+                    <div class="container">
+                        <div class="carousel-caption text-left mycarouselcaption">
+                            <h1><b>North Carolina Weekend</b></h1>
+                            <p>Find the best local food, arts and culture, Thursdays, at 9pm, and Fridays, at 5pm, on UNC-TV.</p><br>
+                            <p>Learn More ></p>
+                        </div>
+                    </div>
+                </div> 
+
+            </div>
+        </div>
+         <a class="carousel-control-prev" href="myCarousel" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="myCarousel" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+        </div>
+    <!--End carousel code--------------->
+        
+        
+<!--Four boxes--------------->
+    <div class="container" id="fourboxes">
+        <div class="row">
+            <div class="col-md-3"><a href="#"><img src="images/viewschedule.jpg"></a></div>
+            <div class="col-md-3"><a href="#"><img src="images/watchonline.jpg"></a></div>
+            <div class="col-md-3"><a href="#"><img src="images/howtowatch.jpg"></a></div>
+            <div class="col-md-3"><a href="#"><img src="images/waystosupport.jpg"></a></div>
+        </div>
+    </div>
+    
+    
+    
+<!--Ads and links--------------->
+<div class="container">
+    <div class="row">
+        <!--Links-->
+        <div class="col-8">
+              <div class="greyboxwide"></div>
+              <div class="greyboxwide"></div>
+              <div class="greyboxwide"></div> 
+        </div>
+        
+        <!--Ads-->
+        <div class="col-4 float-right">
+            <p><i>Our Advertisers and Sponsors</i></p>
+            <ul>
+            <li><a href="#"><img src="images/ncfolkfestad.png" style="margin-top: 20px;"></a></li>
+            <li><a href="#"><img src="images/summerconcertcollectionad.jpg" style="margin-top: 10px;"></a></li>
+            <li><a href="#"><img src="images/envelopead.jpg" style="margin-top: 10px;"></a></li>
+            </ul>
+        </div>
+    </div>
+        
+        
+    </div>
+    
+
+
+      
+      
+      
+        
+        
+  
+<!--Blog posts--------------->
+<div class="container float-left" id="blogposthead">
+    <p>LATEST BLOG POSTS</p>
+</div>
+<div class="container float-left">
+    <div class="row">
+        <div class="col-4" id="blogpostbuttons">
+            <ul>
+                <li><a href="#"><b>ARTS</b></a></li>
+                <li><a href="#"><b>NC HISTORY</b></a></li>
+                <li><a href="#"><b>DOCUMENTARY</b></a></li>
+                <li><a href="#"><b>LIFESTYLE</b></a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-8">
+            <div class="greybox" id="bannerbox">
+            <img src="images/garbanner.png" alt="great american read" id="garbanner">
+            <div class="artsbox">ARTS</div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <p class ="bloghead">Reader of the Week: Christina Rush</p>
+            <p>by <b>Rebekah Radisch</b>  • July 10 2018</p>
+            <p class="blogtext">We're celebrating The Great American Read—and North Carolina's most avid readers—all summer long! See if you have what it takes to be our Reader of the Week!</p>
+            <p class="seemore"><a href="#"><b>SEE MORE ></b></a></p>
+            <div class="container-fluid" id="tags">
+                <ul>
+                <li><a href="#"><b>CHRISTINA RUSH</b></a></li>
+                <li><a href="#"><b>ARTS</b></a></li>
+                <li><a href="#"><b>NC BOOKWATCH</b></a></li>
+            </ul>
+            </div>
+        </div>
+        
+    </div>
+    
+    
+</div>
+</div>
+</div>  
+    
+<!--Three posts--------------->
+<div class="container" id="threeposts">
+    <div class="row">
+        <div class="col-sm-4">
+            <div class="rotw"><img src="images/rotw2.png" alt="Reader of the Week" style="margin-top:15px;"></div>
+            <div class="container">
+                <p class="bloghead">Reader of the Week: Bonnie Davis</p>
+            </div>
+            <div class="container">
+                <p>by <b> Bonnie Davis</b> • July 19 2018</p>
+            </div>
+            <div class="container float-left">
+                <ul id="blogpostsocial">
+                    <li><a href="#"><img src="images/fbbtn.png"></a></li>
+                    <li><a href="#"><img src="images/twitterbtn.png"></a></li>
+                    <li><a href="#"><img src="images/googlebtn.png"></a></li>
+                    <li><a href="#"><img src="images/mailbtn.png"></a></li>
+                </ul>
+            </div> <!--social links-->
+            <div class="container">
+                <p class="blogtext">Bonnie Davis shares her latest favorite read about a loyal dog and his person.</p>
+            </div>
+            </div>
+        
+        <div class="col-sm-4">
+            <div class="rotw"><img src="images/rotw2.png" alt="Reader of the Week" style="margin-top:15px;"></div>
+            <div class="container">
+                <p class="bloghead">Reader of the Week: Christina Rush</p>
+            </div>
+            <div class="container">
+                <p>by <b>Rebekah Radisch</b> • July 10 2018</p>
+            </div>
+            <div class="container float-left">
+                <ul id="blogpostsocial">
+                    <li><a href="#"><img src="images/fbbtn.png"></a></li>
+                    <li><a href="#"><img src="images/twitterbtn.png"></a></li>
+                    <li><a href="#"><img src="images/googlebtn.png"></a></li>
+                    <li><a href="#"><img src="images/mailbtn.png"></a></li>
+                </ul>
+            </div> <!--social links-->
+            <div class="container">
+                <p class="blogtext">We're celebrating The Great American Read—and North Carolina's most avid readers—all summer long! See if you have what it takes to be our Reader of the Week!</p>
+            </div>
+        </div>
+        
+        
+        <div class="col-sm-4">
+            <div class="rotw"><img src="images/rotw2.png" alt="Reader of the Week" style="margin-top:15px;"></div>
+            <div class="container">
+                <p class="bloghead">Reader of the Week: Charles Fiore</p>
+            </div>
+            <div class="container">
+                <p>by <b>Charles Fiore</b> • June 29 2018</p>
+            </div>
+            <div class="container float-left">
+                <ul id="blogpostsocial">
+                    <li><a href="#"><img src="images/fbbtn.png"></a></li>
+                    <li><a href="#"><img src="images/twitterbtn.png"></a></li>
+                    <li><a href="#"><img src="images/googlebtn.png"></a></li>
+                    <li><a href="#"><img src="images/mailbtn.png"></a></li>
+                </ul>
+            </div> <!--social links-->
+            <div class="container">
+                <p class="blogtext">We're celebrating The Great American Read—and North Carolina's most avid readers—all summer long! See if you have what it takes to be our Reader of the Week!</p>
+            </div>
+        </div>
+    </div>
+</div>
+    
+<!--Intro to UNC-TV Passport--------------->
+    <div class="container" id="passport">
+        <div class="row">
+            <div class="col-md-6"><a href="#"><img src=images/unctvpassport.jpg></a></div>
+            <div class="col-md-6" id="passporttext">
+                <p>UNC-TV Passport is an added benefit for valued donors of public television.</p>
+                <p>With UNC-TV Passport, you can enjoy past episodes of many of your favorite PBS and UNC-TV shows on demand using your computer, smartphone or tablet. More platforms and devices are coming soon!</p>
+                <a href="#">CLICK HERE TO LEARN MORE</a>
+            </div>
+        </div>
+    </div> 
+    
+<!--Start social links 2--------------->
+    <div class="container content inner" id="sociallinks2">
+        <ul>
+            <li><a href="#"><img src="images/facebookicon.jpg" alt="Facebook"></a></li>
+            <li><a href="#"><img src="images/twittericon.jpg" alt="Twitter"></a></li>
+            <li><a href="#"><img src="images/instagramicon.jpg" alt="Instagram"></a></li>
+            <li><a href="#"><img src="images/youtubeicon.jpg" alt="Youtube"></a></li>
+            <li><a href="#"><img src="images/emailicon.jpg" alt="Email"></a></li>
+        </ul>
+    </div>
+
+<!-- Footer -->
+<footer class="page-footer font-small pt-4">
+    <div class="container-fluid">
+      <div class="row float-left">
+        <div class="col-md-4 mt-md-0 mt-3">
+          <img  src="images/unctvlogo.png" alt="UNC TV LOGO" width="200" height="70" id= "footerlogo"</a>
+          <p>10 UNC-TV Drive<br>
+          PO Box 14900 RTP, NC 27709<br>
+          viewer@unctv.org</p>
+          <p> Phone: 919-549-7000</p>
+        </div>
+        <hr class="clearfix w-100 d-md-none pb-3">
+
+        <!-- WATCH -->
+        <div class="col-md-2 footercontent">
+            <h5 class="text-uppercase"><b>Watch</b></h5>
+              <ul class="list-unstyled footercontent">
+              <li class=""><a href="#!">Schedule</a></li>
+              <li><a href="#!">Watch on Demand</a></li>
+              <li><a href="#!">UNC-TV Original Series</a> </li>
+              <li><a href="#!">PBS Shows</a></li>
+              <li><a href="#!">UNC-TV Passport</a> </li>
+              <li><a href="#!">How to Watch Us</a></li>
+            </ul>
+          </div>
+        
+          <!-- EXPLORE -->
+          <div class="col-md-2 footercontent">
+            <h5 class="text-uppercase"><b>Explore</b></h5>
+              <ul class="list-unstyled footercontent">
+              <li><a href="#!">Arts</a></li>
+              <li><a href="#!">Current Affairs & Documentary</a></li>
+              <li><a href="#!">Education</a> </li>
+              <li><a href="#!">Lifestyle</a></li>
+              <li><a href="#!">Public Affairs</a> </li>
+              <li><a href="#!">Science & Technology</a></li>
+            </ul>
+          </div>
+
+          <!-- ABOUT -->
+          <div class="col-md-2 footercontent">
+            <h5 class="text-uppercase"><b>About</b></h5>
+              <ul class="list-unstyled footercontent">
+              <li><a href="#!">About UNC-TV</a></li>
+              <li><a href="#!">Creative Services</a></li>
+              <li><a href="#!">Employment & Services</a></li>
+              <li><a href="#!">Submissions</a> </li>
+              <li><a href="#!">Contact Us</a></li>
+              <li><a href="#!">Compliance</a> </li>
+            </ul>
+          </div>
+
+          <!-- SUPPORT-->
+           <div class="col-md-2 footercontent">
+            <h5 class="text-uppercase"><b><a href="#!">Become a Member</a></b></h5>
+              <ul class="list-unstyled footercontent">
+              <li><a href="#!">Sustained Giving</a></li>
+              <li><a href="#!">Matching Gift</a></li>
+              <li><a href="#!">Planned Giving</a> </li>
+              <li><a href="#!">Underwriting</a></li>
+              <li><a href="#!">Corporate & Foundation</a> </li>
+              <li><a href="#!">Support</a></li>
+            </ul>
+          </div>
+
+    </div>
+    </footer>
+
+ <!-- Copyright -->
+  <div class="text-center py-3 page-footer font-small gray footer-copyright" id="copyright">
+    ©2018 UNC-TV Public Media North Carolina. All rights reserved.
+  </div>
+
+
+<!--Media queries code-------------------------->
+ <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
     </body>
-    
-    
     
 </html>
