@@ -55,7 +55,7 @@ a:hover, a:active, a:visited {
 
 .greyboxwide {
     background: #F4F4F4;
-    width: 600px;
+    width: 800px;
     height: 250px;
     margin: 20px 40px 20px 20px;
 }
@@ -111,7 +111,7 @@ a:hover, a:active, a:visited {
 }
 
 .mycarouselcaption p {
-    font-family: Open Sans, sans serif;
+    font-family: Open Sans, sans-serif;
     font-size: 14px;
     width: 40%;
     text-align: left;
@@ -122,8 +122,41 @@ a:hover, a:active, a:visited {
     text-decoration:none;
 }
 
+.greyboxwide img {
+    position: relative;
+    max-width: 50%;
+    margin-left: 0px;
+}
+
+
+.learnmorebtn {
+    width: 100px;
+    color: #3A7080;
+    background: #F4F4F4;
+    padding: 10px;
+    margin: 20px 10px 20px 10px;
+    
+    
+}
+
 
 /*ID SELECTORS*/
+
+#adtext1 {
+    float:right;
+    margin-top: -200px;
+    max-width: 80%;
+    margin-left: -200px;
+    font-family: OpenSans, sans-serif;
+}
+
+#adtext1 h1 {
+    font-size: 18px;
+}
+
+#adtext p {
+    font-size: 12px;
+}
 
 #logo {
     margin-left: 30px;
