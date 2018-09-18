@@ -152,17 +152,29 @@ a:hover, a:active, a:visited {
     
 }
 
+
 #learnmore a{
     position: relative;
     width: 150px;
-    height: 100px;
+    height: 130px;
     font-size: 18px;
     color: #3A7080;
-    border: 2px solid #3A7080;
+    border: 2px solid #194350;
     background: #F4F4F4;
     padding: 10px;
     margin-left: 430px;
-    margin-top: 150px;
+}
+
+#learnmore a:hover {
+    position: relative;
+    width: 150px;
+    height: 130px;
+    font-size: 18px;
+    color: white;
+    border: 2px solid #194350;
+    background: #194350;
+    padding: 10px;
+    margin-left: 430px;
 }
 
 
