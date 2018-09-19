@@ -2,10 +2,10 @@
 <!--QUESTIONS & COMMENTS FOR LEXI:
 **How do I center align the carousel?
 **Can't get arrows on carousel?
-**Two columns won't line up--tried reducing line size and using floats?
+**Need to learn to do more complicated hamburger menus
 **Struggling to align "Learn more" buttons beneath links...cannot for the life of me get them to show up on top of the grey box 
 **Main takeaway struggle is alignment...
-**Still don't understand media queries...definitely need a refresher. :(
+**Slightly better understanding after class, but will definitely practice more with media queries.
 **When committing to Github, do you need to commit your changes normally AND ALSO commit them to Github Pages? 
 -->
         
@@ -14,7 +14,7 @@
     <html lang="en">
     <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <!-- Bootstrap CSS------------->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
@@ -44,17 +44,23 @@
     </div>
   
   <div class="col-6">
+    <button class= "navbar-toggle" data-toggle = "collapse" data-target = ".navHeaderCollapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+    </button> 
+    <div class ="collapse navbar-collapse navHeaderCollapse">
     <ul class="nav navbar-nav" id="mainnavlinks">
-            <li><a href="#">Watch</a></li>
+            <li class="active"><a href="#">Watch</a></li>
             <li><a href="#">Explore</a></li>
             <li><a href="#">Kids</a></li>
             <li><a href="#">About</a></li>
             <li><a href="#" style="color: #9E2026"><b>DONATE</b></a></li>
             <li><a href="#"><span class="glyphicon glyphicon-search"></span></a></li>
     </ul>
+    </div>
   </div>
 </div>    
-  
 </nav>
     
 <!--Social links------------->
@@ -68,12 +74,13 @@
     </ul>
 </div>
 
-    
+<!--Alert bar------------->
+<img src="images/alertbar.jpg" id="alertbar">
    
    
 <!--Start carousel code------------->
         <div class="carousel slide content inner" data-ride="carousel" id="myCarousel">
-            <ol class="carousel-indicators">
+            <ol class="carousel-indicators  content inner">
                 <li data-target="myCarousel" data-slide-to="0" class="active"></li>
                 <li data-target="myCarousel" data-slide-to="1"></li>
                 <li data-target="myCarousel" data-slide-to="2"></li>
